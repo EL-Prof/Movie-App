@@ -1,0 +1,159 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    tools:context="com.android.movieapp.MovieDetailsFragment"
+    tools:showIn="@layout/activity_movie_details">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/TiltextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <ImageView
+        android:layout_width="210dp"
+        android:layout_height="265dp"
+        android:id="@+id/imageView"
+
+        android:layout_x="3dp"
+        android:layout_y="53dp"
+
+        android:scaleType="fitXY"
+        android:layout_below="@+id/TiltextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+
+    <ImageView
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:id="@+id/RatingView"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="2dp"
+        android:src="@drawable/rating_star"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="7.35"
+        android:id="@+id/RateValueView"
+        android:layout_alignTop="@+id/RatingView"
+        android:layout_toRightOf="@+id/RatingView"
+        android:layout_alignBottom="@+id/RatingView"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="/10"
+        android:id="@+id/tenView"
+        android:layout_alignBottom="@+id/RateValueView"
+        android:layout_toRightOf="@+id/RateValueView"
+        android:layout_toEndOf="@+id/RateValueView"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/DescView"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="3dp"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Release date:"
+        android:id="@+id/Date_text"
+        android:layout_below="@+id/RatingView"
+        android:layout_alignLeft="@+id/RatingView"
+        android:layout_alignStart="@+id/RatingView"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="4dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="2016-07-27"
+        android:id="@+id/date_value"
+        android:layout_below="@+id/Date_text"
+        android:layout_alignLeft="@+id/Date_text"
+        android:layout_alignStart="@+id/Date_text" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/TrailerView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/watch"
+        android:layout_below="@+id/DescView"
+        android:background="#0e0d0d"
+        android:layout_marginTop="12dp"
+
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/movie_reviews"
+        android:layout_alignLeft="@+id/date_value"
+        android:layout_alignStart="@+id/date_value"
+        android:layout_below="@+id/DescView"
+        android:layout_alignBottom="@+id/TrailerView"
+
+                />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageButton"
+        android:src="@drawable/favorite_heart"
+        android:scaleType="fitCenter"
+android:adjustViewBounds="true"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_toRightOf="@+id/RatingView"
+        android:layout_marginBottom="30dp"
+
+        />
+
+
+</RelativeLayout>
+</ScrollView>
